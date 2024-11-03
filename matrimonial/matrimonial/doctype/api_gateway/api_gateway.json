@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AG.#####",
+ "creation": "2024-11-03 23:08:37.081027",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_name",
+  "method_type",
+  "access_control",
+  "parameters",
+  "response_format",
+  "allow_guest"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Name"
+  },
+  {
+   "fieldname": "method_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Method Type",
+   "options": "GET\nPOST\nPUT\nDELETE"
+  },
+  {
+   "fieldname": "access_control",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Access Control",
+   "options": "Public\nAuthenticated Only\nAdmin Only"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "API Parameter"
+  },
+  {
+   "fieldname": "response_format",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Response Format",
+   "options": "JSON"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_guest",
+   "fieldtype": "Check",
+   "label": "Allow Guest"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-03 23:44:16.950026",
+ "modified_by": "Administrator",
+ "module": "Matrimonial",
+ "name": "API Gateway",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
